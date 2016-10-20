@@ -17,7 +17,7 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  username: dapresident #default if not created
+  username: ubuntu #default if not created
   password:  #default if not created
   pool: 5
 
@@ -83,4 +83,3 @@ production:
   database: seeks_production
   username: seeks
   password: <%= ENV['SEEKS_DATABASE_PASSWORD'] %>
-
