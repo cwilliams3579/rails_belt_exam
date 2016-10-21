@@ -9,6 +9,14 @@
   </head>
 
   <body>
+    <% if flash[:errors] %>
+    <% flash[:errors].each do |error| %>
+      <p><%= error %></p>
+    <% end %>
+  <% end %>
+    <% if session[:user_id] %>
+      <a href="/sessions/<%= session[:user_id] %>" data-method="delete">Log Out</a>
+    <% end %>
     <%= yield %>
   </body>
 </html>
