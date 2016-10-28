@@ -1,14 +1,14 @@
 Rails.application.routes.draw do
-  resources :users
-  resources :sessions
-  resources :products
-  get 'products/dashboard'
-
-  get 'products/show'
-  get 'sessions/create'
-  get 'sessions/destroy'
-
-  root 'users#main'
+	root 'users#index'
+	resources :users 
+	resources :sessions
+	resources :songs
+#	post '/sessions' => 'sessions#create'
+#	post '/users' => 'users#create'
+#  get '/songs' => 'songs#index'
+#	post '/songs' => 'songs#create'
+	delete '/sessions' => 'sessions#destroy'
+#  get 'songs/new'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
