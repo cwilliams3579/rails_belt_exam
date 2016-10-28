@@ -1,0 +1,25 @@
+<a href="/sessions" data-method="delete">Logout</a>
+<div class="container">
+	<h2>Hello, <%= current_user.first_name %></h2>
+	<p>All the songs in our hub:</p>
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Artist</th>
+				<th>Title</th>
+				<th>#Times Songs Added</th>
+				<th>Add to Playlist</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<%  %>
+				<td><%=  %></td>
+				<td><%=  %></td>
+				<td><%=  %></td>
+				<td><%= link_to 'Add to Playlist', songs_path, :class =>"btn btn-success"%></td>
+			</tr>
+
+		</tbody>
+	</table>
+</div>
