@@ -81,11 +81,5 @@ test:
 #
 production:
   <<: *default
-<<<<<<< HEAD
-  database: rails_belt_exam_production
-
-=======
   database: RailsBelt2_production
-  username: RailsBelt2
   password: <%= ENV['RAILSBELT2_DATABASE_PASSWORD'] %>
->>>>>>> 3b9cc99ce7f3cc12162e192e38e6edee9bf30c6d
