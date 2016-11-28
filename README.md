@@ -9,19 +9,13 @@ Things you may want to cover:
   ruby 2.3.1
 
 * System dependencies
-
-* Configuration
-
+  Ruby on Rails
+  Git
+  
 * Database creation
   Postgresql
 
 * Database initialization
 
 * How to run the test suite
-  Head over to coding-ninjas.com
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  Clone the repo then run bundle install
